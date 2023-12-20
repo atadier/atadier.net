@@ -1,0 +1,13 @@
+@use "dark";
+@use "light";
+
+:root {
+    @include light.theme($theme: light);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include dark.theme($theme: dark);
+    }
+}

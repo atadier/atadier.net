@@ -1,0 +1,24 @@
+base_url = "https://atadier.net"
+title = "Arthur Tadier"
+author = "Arthur Tadier"
+
+generate_feed = true
+feed_filename = "rss.xml"
+
+compile_sass = false
+theme = "simple-papaya"
+
+[markdown]
+highlight_code = true
+highlight_theme = "everforest-dark"
+extra_syntaxes_and_themes = ["themes"]
+
+[extra]
+mail_contact = "arthur@atadier.net"
+mastodon = "mastodon.online/@atadier"
+color_mode = "auto"
+
+menu_items = [
+    { name = "software", url = "$BASE_URL/software", show_recent = true, recent_items = 1, recent_title = "latest project", more_title = "more projects" },
+    { name = "blog", url = "$BASE_URL/blog", show_recent = true, recent_items = 1, recent_title = "recent blog post", more_title = "more blog posts" }
+]
