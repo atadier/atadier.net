@@ -10,7 +10,7 @@ min_version = "0.16.1"
 # Use snake_casing to be consistent with the rest of Zola
 [extra]
 env = "$ZOLA_ENV"
-papaya_date_format = "%e %B %Y"
+papaya_date_format = "%B %e, %Y"
 papaya_menu_links = []
 
 [author]

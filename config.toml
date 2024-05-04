@@ -16,6 +16,7 @@ extra_syntaxes_and_themes = ["themes"]
 [extra]
 mail_contact = "arthur@atadier.net"
 mastodon = "mastodon.online/@atadier"
+github = "atadier"
 color_mode = "auto"
 
 menu_items = [

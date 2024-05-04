@@ -33,13 +33,13 @@
                 {{ page.title }}
             </h3>
         </header>
-
-        {% if page.summary %}
-        <div class="content post-summary">
-            {{ page.summary | markdown | safe }}
-        </div>
-        {% endif %}
     </a>
+
+    {% if page.summary %}
+    <div class="content post-summary">
+        {{ page.summary | markdown | safe }}
+    </div>
+    {% endif %}
 
     {{ self::page_info(page=page) }}
 </article>
@@ -74,13 +74,14 @@
                 {{ page.title }}
             </h3>
         </header>
-
-        {% if page.summary %}
-        <div class="content post-summary">
-            {{ page.summary | markdown | safe }}
-        </div>
-        {% endif %}
     </a>
+
+    {% if page.summary %}
+    <div class="content post-summary">
+        {{ page.summary | markdown | safe }}
+    </div>
+    {% endif %}
+
     {{ self::project_info(page=page) }}
 </article>
 {% endmacro page_listing %}
