@@ -1,11 +1,6 @@
-/* Basic */
+/* Base elements */
 html {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-    /* 1 */
-    -ms-text-size-adjust: 100%;
-    /* 2 */
-    -webkit-text-size-adjust: 100%;
-    /* 2 */
 }
 
 body {
@@ -110,6 +105,10 @@ a:active {
 a.active {
     color: var(--link-hover-color);
     transition: all 0.15s linear;
+}
+
+.site-header a:hover {
+    text-decoration: none;
 }
 
 /* Table */
@@ -273,6 +272,9 @@ article header h2 {
 }
 
 .article-info {
+    display: flex;
+    gap: 24px;
+
     font-size: 0.75em;
     color: var(--text-accent-color);
 
@@ -294,9 +296,14 @@ article header h2 {
     display: inline-block;
 }
 
-.article-date {
+.article-detail {
     display: inline-block;
     white-space: nowrap;
+
+    svg {
+        vertical-align: middle;
+        margin-right: .1em;
+    }
 }
 
 .article-category {
@@ -406,7 +413,7 @@ figcaption {
 }
 
 .post-list {
-    a {
+    > a {
         color: var(--text-color);
         text-decoration: none;
 
@@ -415,26 +422,26 @@ figcaption {
         }
     }
 
-    a:active,
-    a:hover {
+    > a:active,
+    > a:hover {
         outline: 0;
     }
 
-    a:hover,
-    a:focus {
+    > a:hover,
+    > a:focus {
         color: var(--link-hover-color);
         border-bottom: 1px solid var(--link-hover-line-color);
         transition: all 0.1s linear;
     }
 
-    a:active {
+    > a:active {
         color: var(--link-hover-color);
         opacity: 0.9;
         border-bottom: 1px solid var(--link-hover-line-color);
         transition: all 0.1s linear;
     }
 
-    a.active {
+    > a.active {
         color: var(--link-hover-color);
         transition: all 0.1s linear;
     }
@@ -446,6 +453,10 @@ figcaption {
     h3 {
         margin-block-start: 0.25em;
         margin-block-end: 0;
+    }
+
+    .article-info {
+        margin-bottom: .4em;
     }
 }
 

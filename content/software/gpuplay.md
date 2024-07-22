@@ -1,6 +1,7 @@
 +++
 title = "gpuplay"
 date = 2024-05-04
+extra.link = "https://github.com/atadier/gpuplay"
 +++
 
 A small command line application to visualize GPU shaders built with the `wgpu` graphics API.
@@ -8,7 +9,6 @@ A small command line application to visualize GPU shaders built with the `wgpu` 
 <!-- more -->
 I built a small GPU shader visualization tool as a first hands-on endeavour in the world of Rust graphics and hardware acceleration.
 
-[`gpuplay` on GitHub](https://github.com/atadier/gpuplay)
 {{ img(path="img/gpuplay.png", alt="Screenshot of the gpuplay application") }}
 
 The simplicity of this project demonstrates quite well the power of using [`wgpu`](https://github.com/gfx-rs/wgpu/) as a graphics abstraction: the application can make use of different graphics APIs to target all platforms with a relatively small codebase. I would even imagine that it would have taken me more time to write this application only targeting one of the low level APIs like Vulkan.
